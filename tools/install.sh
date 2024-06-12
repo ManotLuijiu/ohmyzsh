@@ -63,10 +63,11 @@ zdot="${ZDOTDIR:-$HOME}"
 # Default value for $ZSH
 # a) if $ZDOTDIR is supplied and not $HOME: $ZDOTDIR/ohmyzsh
 # b) otherwise, $HOME/.oh-my-zsh
-if [ -n "$ZDOTDIR" ] && [ "$ZDOTDIR" != "$HOME" ]; then
-  ZSH="${ZSH:-$ZDOTDIR/ohmyzsh}"
-fi
-ZSH="${ZSH:-$HOME/.oh-my-zsh}"
+# if [ -n "$ZDOTDIR" ] && [ "$ZDOTDIR" != "$HOME" ]; then
+#   ZSH="${ZSH:-$ZDOTDIR/ohmyzsh}"
+# fi
+# ZSH="${ZSH:-$HOME/.oh-my-zsh}"
+ZSH=~/.oh-my-zsh
 
 # Default settings
 REPO=${REPO:-ohmyzsh/ohmyzsh}
